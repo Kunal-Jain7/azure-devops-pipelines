@@ -14,10 +14,10 @@ stages:
     jobs:
       - job: FirstDeploy
         steps:
-        - bash: echo This is the first stage and First Job
+        - bash: echo This is the first stage and First Job in $(ENVTODEPLOY) environment.
       - job: SecondDeploy
         steps:
-        - bash: echo This is the first stage and Second Job
+        - bash: echo This is the first stage and Second Job in $(ENVTODEPLOY) environment.
   - stage: QADeploy
     jobs:
     - job: QADeployPlan
