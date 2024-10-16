@@ -9,10 +9,10 @@ variables:
 
 stages:
 - stage: Build
-  displayName: Build and pushing the image
+  displayName: Build
   jobs:
   - job: Build
-    displayName: Build and pushing the image to repository
+    displayName: Build
     pool:
       vmImage: ubuntu-latest
     steps:
